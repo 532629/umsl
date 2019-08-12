@@ -6,6 +6,8 @@ This is a "microservice" application intended to be part of a microservice archi
 
 This application is configured for Service Discovery and Configuration with . On launch, it will refuse to start if it is not able to connect to .
 
+## Added SOP-DevOps.docx for complete implementation details , along with screen shots
+
 ## Development
 
 To start your application in the dev profile, simply run:
@@ -100,3 +102,5 @@ To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`)
 
  zipkin
  http://localhost:9411
+ 
+ 
