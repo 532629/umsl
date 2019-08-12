@@ -1,0 +1,74 @@
+pipeline {
+    agent any 
+    stages {
+        
+        stage('Code Checkout') { 
+            steps {
+                sh 'git clone '
+            }
+        }
+		
+		    stage('Development') {
+            steps {
+                sh './mvnw'
+            }
+			}
+	    stage('Packaging jar') {
+            steps {
+                sh './mvnw -Pprod clean verify'
+            }
+		
+	 }
+	    stage('Deploy jar') {
+            steps {
+                sh 'java -jar target/*.jar'
+            }	 
+    }
+	    stage('Packaging jar') {
+            steps {
+                sh './mvnw -Pprod clean verify'
+            }
+	
+}
+ stage('Packaging as war') {
+            steps {
+                sh './mvnw -Pprod,war clean verify'
+            }	 
+    }
+ stage('Sonar Testing') {
+            steps {
+                sh './mvnw verify'
+            }	 
+    }
+ stage('Sonar Execute') {
+            steps {
+                sh 'docker-compose -f src/main/docker/sonar.yml up -d'
+            }	 
+    }
+ stage('Sonar analysis') {
+            steps {
+                sh './mvnw -Pprod clean verify sonar:sonar'
+            }	 
+    }	
+stage('Sonar analysis') {
+            steps {
+                sh './mvnw -Pprod clean verify sonar:sonar';
+				sh './mvnw initialize sonar:sonar'
+            }	 
+    }	
+	
+stage('Create Docker Image') {
+            steps {
+                sh './mvnw -Pprod verify jib:dockerBuild';
+		
+            }	 
+    }
+	
+	stage('Docker Deploy') {
+            steps {
+                sh 'docker-compose -f src/main/docker/app.yml up -d';
+		
+            }	 
+    }
+}
+}
