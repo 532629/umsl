@@ -1,0 +1,35 @@
+
+
+The airline is taking initiatives into digital transformation to address the market and competitive forces that are consolidating through disruptive business models. IT is playing a central role in the digital enablement program with key focus on building strong technology foundations and customer center capabilities. Key focus areas to enhance delivery capabilities are to harness the potential of hybrid cloud (Cloud/On-premises) , data and analytics, Automation, DevOps-DevSecOps, Monolithic to Microservice Architecture, Could native Application and Site reliability practices.
+
+Digital transformation is the integration of digital technology into all areas of a business, fundamentally changing how you operate and deliver value to customers. It's also a cultural change that requires organizations to continually challenge the status quo, experiment, and get comfortable with failure. 
+
+
+Challenges
+<Organization Name>'s  
+
+One of the initiatives undertaken by the Future Airline’s Digital engineering team is to build unified middleware service layer (UMSL) using microservices architecture to serve Omni channels (like desktop app, IOS/Android app and other services). Due to complex technology landscape and systemic issues around environments, the changes to the products are moving too slowly. “Business would come to us with a million ideas that would dazzle the end customer, and we’d just tell them, out of your list, pick the two things you’d like to get in the next 6–12 months”. Business had tried hiring and outsourcing their way out of the problem, but nothing had worked. 
+“IF UMSL has to come off the critical path”, the targets set by the digital leadership team is to improve deployment frequency by minimum of 5X times.
+
+Initial application development process was labour intensive, taking an average of 5-6 months’ time to move one changes from development to production due to legacy IT culture(lack of team colloboration), mistakes, reviews,complex technology landscape,systemic issues around environments and rework of application configurations. This process lacked repeatability due to its manual nature and culture.Future Airline’s Digital engineering team take initiatives to build unified middleware service layer (UMSL) using microservices architecture to serve Omni channels (like desktop app, IOS/Android app and other services) but the changes to the products are moving too slowly. 
+“Business would come to us with a million ideas that would dazzle the end customer, and we’d just tell them, out of your list, pick the two things you’d like to get in the next 6–12 months”. Business had tried hiring and outsourcing their way out of the problem, but nothing had worked. 
+“IF UMSL has to come off the critical path”,Future Airline’s Digital engineering  was looking for an end to end integrated process to maximize the automation of manual processes, cultural gap and improve deployment frequency by minimum of 5X times.
+
+Find and fix security vulnerabilities and quality issues in your code as it is being developed.
+
+Identify runtime vulnerabilities that expose sensitive data with near-zero false positives.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
