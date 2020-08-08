@@ -1,18 +1,18 @@
 ## Terraform Script for AWS resources
 
 
-#vpc module(umsl/main.tf)
+# vpc module(umsl/main.tf)
 -------------------------------------
 Create vpc and push the state file to S3 bucket and put a lock using Dynamodb.
 
 
-#ec2-module (ec2-module/main.tf and vriables.tf) 
+# ec2-module (ec2-module/main.tf and vriables.tf) 
 -----------------------------------
 Defile following resources 
 	aws_autoscaling_group -->aws_launch_configuration-->aws_security_group
 
 
-#Environment creation - Dev-Ec2/main.tf
+# Environment creation - Dev-Ec2/main.tf
 ---------------------------------------
 Create the EC2 instances with desired configuration
 
